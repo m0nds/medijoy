@@ -1,4 +1,4 @@
-import { acneProven, antiAgingProven, deepCleansingProven, dermalFillersProven, foreheadLinesProven, jawlineProven, microneedlingProven, profhiloProven, skinboosterProven, vvpProven, crowFeetProven, chemicalPeelProven, underEyesProven, hydratingFacialProven, prpProven, dermabrasionProven } from "../assets/images/proven results"
+import { acneProven, antiAgingProven, deepCleansingProven, dermalFillersProven, foreheadLinesProven, jawlineProven, microneedlingProven, profhiloProven, skinboosterProven, crowFeetProven, chemicalPeelProven, hydratingFacialProven, prpProven, dermabrasionProven } from "../assets/images/proven results"
 
 export type ResultFilter = {
   slug: string
