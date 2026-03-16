@@ -5,25 +5,25 @@ const services = [
   {
     title: 'Facials',
     description: 'Deep cleansing hydration and rejuvenation',
-    image: '/src/assets/images/facials.png',
+    image: '/assets/images/facials.png',
     categorySlug: 'facial-treatment',
   },
   {
     title: 'Advanced Treatment',
     description: 'Microneedling, peels and skin resurfacing',
-    image: '/src/assets/images/advancedTreatment.png',
+    image: '/assets/images/advancedTreatment.png',
     categorySlug: 'advanced-treatment',
   },
   {
     title: 'Botox',
     description: 'Wrinkle reduction and facial contouring',
-    image: '/src/assets/images/botox.png',
+    image: '/assets/images/botox.png',
     categorySlug: 'botox',
   },
   {
     title: 'Skin Booster',
     description: 'Deep hydration and quality improvement',
-    image: '/src/assets/images/skinBooster.png',
+    image: '/assets/images/skinBooster.png',
     categorySlug: 'skin-boosters',
   },
 ]

@@ -3,19 +3,19 @@ const qualifications = [
     title: 'Qualified & Certified',
     description:
       'Level 7 Aesthetics Practitioner with advanced training in injectables and skin treatments',
-    image: '/src/assets/images/qualifiedCertified.png',
+    image: '/assets/images/qualifiedCertified.png',
   },
   {
     title: 'Client Centered Care',
     description:
       'Every treatment is personalized, every client is heard, and every result is natural',
-    image: '/src/assets/images/clientCenteredCare.png',
+    image: '/assets/images/clientCenteredCare.png',
   },
   {
     title: '10+ Years of Experience',
     description:
       'A decade of helping clients achieve their skin goals with expertise and care',
-    image: '/src/assets/images/tenYearsExperience.png',
+    image: '/assets/images/tenYearsExperience.png',
   },
 ]
 
@@ -35,7 +35,7 @@ export default function MeetCeo() {
         <div className="mt-8 sm:mt-12 grid gap-6 sm:gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">
           <div className="overflow-hidden rounded-xl shadow-md max-w-md mx-auto lg:max-w-none">
             <img
-              src="/src/assets/images/meetJoy.png"
+              src="/assets/images/meetJoy.png"
               alt="Joy - Founder & Lead Aesthetics Practitioner"
               className="aspect-square w-full object-cover"
             />

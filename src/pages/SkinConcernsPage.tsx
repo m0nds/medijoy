@@ -7,25 +7,25 @@ const WHY_PROFESSIONAL_ITEMS = [
     title: 'Advanced Ingredients',
     description:
       'Professional-grade products and advanced formulations that deliver visible results you can\'t achieve at home.',
-    image: '/src/assets/images/advancedIngredients.png',
+    image: '/assets/images/advancedIngredients.png',
   },
   {
     title: 'Expert Assessment',
     description:
       'Personalised treatment plans based on a thorough analysis of your skin type, concerns and goals.',
-    image: '/src/assets/images/expertGuidance.png',
+    image: '/assets/images/expertGuidance.png',
   },
   {
     title: 'Clinical Technology',
     description:
       'Medical-grade equipment and proven techniques that work at a deeper level to address root causes.',
-    image: '/src/assets/images/clinicalTechnology.png',
+    image: '/assets/images/clinicalTechnology.png',
   },
   {
     title: 'Ongoing Support',
     description:
       'Continuous support and maintenance plans to help you achieve and sustain healthy, confident skin.',
-    image: '/src/assets/images/ongoingSupport.png',
+    image: '/assets/images/ongoingSupport.png',
   },
 ]
 

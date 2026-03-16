@@ -3,31 +3,31 @@ const reasons = [
     title: 'Personalized Care',
     description:
       'Every treatment is tailored to your unique skin type, concerns, and goals.',
-    image: '/src/assets/images/personalizedCare.png',
+    image: '/assets/images/personalizedCare.png',
   },
   {
     title: 'Expert Guidance',
     description:
       'Led by Joy, a certified aesthetician with over 40 years of medical experience, Medijoy Clinic combines advanced medical knowledge with aesthetic expertise to deliver trusted, professional skin care solutions.',
-    image: '/src/assets/images/expertGuidance.png',
+    image: '/assets/images/expertGuidance.png',
   },
   {
     title: 'Evidence-Based Approach',
     description:
       'We use proven treatments backed by science, not trends. Your skin deserves methods that work.',
-    image: '/src/assets/images/evidenceBased.png',
+    image: '/assets/images/evidenceBased.png',
   },
   {
     title: 'Clean environment',
     description:
       'A peaceful clean space where you can relax, ask questions, feel supported throughout your journey.',
-    image: '/src/assets/images/cleanEnvironment.png',
+    image: '/assets/images/cleanEnvironment.png',
   },
   {
     title: 'Safe & Regulated',
     description:
       'All treatments follow strict safety protocols and are carried out to the highest medical standards.',
-    image: '/src/assets/images/safeRegulated.png',
+    image: '/assets/images/safeRegulated.png',
   },
 ]
 

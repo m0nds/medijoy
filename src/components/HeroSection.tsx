@@ -8,8 +8,8 @@ export default function HeroSection() {
   const [inView, setInView] = useState(false)
 
   const responsiveImage = isMobile
-    ? '/src/assets/images/mobileBackground.png'
-    : '/src/assets/images/desktopBackground.png'
+    ? '/assets/images/mobileBackground.png'
+    : '/assets/images/desktopBackground.png'
 
   useEffect(() => {
     const el = statsRef.current

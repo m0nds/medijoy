@@ -19,42 +19,42 @@ export const SKIN_CONCERN_CARDS = [
     title: 'Acne & Breakouts',
     description:
       'Professional treatment to clear and prevent blemishes, reduce inflammation and restore skin health with targeted solutions.',
-    image: '/src/assets/images/acne.png',
+    image: '/assets/images/acne.png',
     slug: 'acne-breakouts',
   },
   {
     title: 'Hyperpigmentation',
     description:
       'Advanced solution for dark spots, melasma, uneven tone, and sun damage to restore bright, more even complexion.',
-    image: '/src/assets/images/hyperpigmentation.png',
+    image: '/assets/images/hyperpigmentation.png',
     slug: 'hyperpigmentation',
   },
   {
     title: 'Anti-ageing Fine Lines',
     description:
       'Turn back time with treatments that smooth wrinkles, boost collagen production, and restore youthful radiance to your skin.',
-    image: '/src/assets/images/anti-agingFineLines.png',
+    image: '/assets/images/anti-agingFineLines.png',
     slug: 'anti-ageing-fine-lines',
   },
   {
     title: 'Dull Dehydrated Skin',
     description:
       'Revitalise and hydrate your skin for a smoother, softer complexion, with advanced exfoliation and rejuvenating treatments.',
-    image: '/src/assets/images/dullSkin.png',
+    image: '/assets/images/dullSkin.png',
     slug: 'dull-dehydrated-skin',
   },
   {
     title: 'Uneven Texture',
     description:
       'Refine and retexturise your skin for a smoother, softer complexion, with advanced exfoliation and rejuvenating treatments.',
-    image: '/src/assets/images/unevenTexture.png',
+    image: '/assets/images/unevenTexture.png',
     slug: 'uneven-texture',
   },
   {
     title: 'Enlarged Pores',
     description:
       'Minimise the appearance of enlarged pores with treatments that reduce oil production and refine skin texture for a smoother finish.',
-    image: '/src/assets/images/enlargedPores.png',
+    image: '/assets/images/enlargedPores.png',
     slug: 'enlarged-pores',
   },
 ] as const
@@ -64,7 +64,7 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
   'acne-breakouts': {
     slug: 'acne-breakouts',
     title: 'Acne & Breakouts',
-    heroImage: '/src/assets/images/acne.png',
+    heroImage: '/assets/images/acne.png',
     whatIs:
       'Acne occurs when pores become blocked with oil, dead skin cells and bacteria, leading to blackheads, whiteheads or inflamed spots. Deeper breakouts can affect the surrounding skin tissue and may cause scarring as the skin heals.',
     howWeHelp:
@@ -73,19 +73,19 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
       {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
-        image: '/src/assets/images/microneedling.png',
+        image: '/assets/images/microneedling.png',
       },
       {
         title: 'PRP Vampire Facial',
         description: 'Use your own growth factors to accelerate skin healing',
-        image: '/src/assets/images/prpVampireFacial.png',
+        image: '/assets/images/prpVampireFacial.png',
       },
     ],
   },
   hyperpigmentation: {
     slug: 'hyperpigmentation',
     title: 'Hyperpigmentation',
-    heroImage: '/src/assets/images/hyperpigmentation.png',
+    heroImage: '/assets/images/hyperpigmentation.png',
     whatIs:
       'Hyperpigmentation appears as dark patches on the skin caused by excess melanin production. It can affect all skin tones and often appears after acne, sun exposure or hormonal changes.',
     howWeHelp:
@@ -94,20 +94,20 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
       {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
-        image: '/src/assets/images/microneedling.png',
+        image: '/assets/images/microneedling.png',
       },
       {
         title: 'Chemical Peel',
         description:
           'Resurface skin to improve texture, clarity & overall tone.',
-        image: '/src/assets/images/chemicalPeels.png',
+        image: '/assets/images/chemicalPeels.png',
       },
     ],
   },
   'anti-ageing-fine-lines': {
     slug: 'anti-ageing-fine-lines',
     title: 'Anti-ageing Fine Lines',
-    heroImage: '/src/assets/images/anti-agingFineLines.png',
+    heroImage: '/assets/images/anti-agingFineLines.png',
     whatIs:
       'Fine lines are the earliest visible signs of skin ageing. Over time fine lines develop into wrinkles. They typically appear around the forehead, eyes and mouth, and are caused by repeated facial expressions, collagen loss, and environmental exposure.',
     howWeHelp:
@@ -116,19 +116,19 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
       {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
-        image: '/src/assets/images/microneedling.png',
+        image: '/assets/images/microneedling.png',
       },
       {
         title: 'PRP Vampire Facial',
         description: 'Use your own growth factors to accelerate skin healing',
-        image: '/src/assets/images/prpVampireFacial.png',
+        image: '/assets/images/prpVampireFacial.png',
       },
     ],
   },
   'dull-dehydrated-skin': {
     slug: 'dull-dehydrated-skin',
     title: 'Dull Dehydrated Skin',
-    heroImage: '/src/assets/images/dullSkin.png',
+    heroImage: '/assets/images/dullSkin.png',
     whatIs:
       'Dull skin is the build-up of dead skin cells causing lack of radiance, tiredness, roughness and unevenness. It is often linked to dehydration, slow cell turnover or environmental stress.',
     howWeHelp:
@@ -137,19 +137,19 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
       {
         title: 'Facials',
         description: 'Deep cleansing hydration and rejuvenation.',
-        image: '/src/assets/images/facials.png',
+        image: '/assets/images/facials.png',
       },
       {
         title: 'PRP Vampire Facial',
         description: 'Use your own growth factors to accelerate skin healing',
-        image: '/src/assets/images/prpVampireFacial.png',
+        image: '/assets/images/prpVampireFacial.png',
       },
     ],
   },
   'uneven-texture': {
     slug: 'uneven-texture',
     title: 'Uneven Texture',
-    heroImage: '/src/assets/images/unevenTexture.png',
+    heroImage: '/assets/images/unevenTexture.png',
     whatIs:
       'Uneven texture includes roughness, enlarged pores, bumps, or an irregular skin surface that affects smoothness and makeup application. It appears from acne scarring, collagen loss, sun damage, ageing and slow cell renewal.',
     howWeHelp:
@@ -158,19 +158,19 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
       {
         title: 'Dermabrasion',
         description: 'Exfoliation and peach fuzz removal to improve texture.',
-        image: '/src/assets/images/dermabrasion.png',
+        image: '/assets/images/dermabrasion.png',
       },
       {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
-        image: '/src/assets/images/microneedling.png',
+        image: '/assets/images/microneedling.png',
       },
     ],
   },
   'enlarged-pores': {
     slug: 'enlarged-pores',
     title: 'Enlarged Pores',
-    heroImage: '/src/assets/images/advancedTreatment.png',
+    heroImage: '/assets/images/advancedTreatment.png',
     whatIs:
       'Enlarged pores are visible openings on the skin\'s surface that appear more noticeable due to excess oil production, reduced elasticity, or build-up. They are commonly seen on nose, forehead and cheeks.',
     howWeHelp:
@@ -179,12 +179,12 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
       {
         title: 'Dermabrasion',
         description: 'Exfoliation and peach fuzz removal to improve texture.',
-        image: '/src/assets/images/dermabrasion.png',
+        image: '/assets/images/dermabrasion.png',
       },
       {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
-        image: '/src/assets/images/microneedling.png',
+        image: '/assets/images/microneedling.png',
       },
     ],
   },

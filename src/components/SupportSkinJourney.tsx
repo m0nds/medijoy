@@ -3,25 +3,25 @@ const journeyItems = [
     title: 'Book Paid Consultation',
     description:
       'Schedule your initial consultation online or via WhatsApp. Choose between a virtual or in clinic appointment that suits your schedule successfully.',
-    image: '/src/assets/images/bookPaidConsultation.png',
+    image: '/assets/images/bookPaidConsultation.png',
   },
   {
     title: 'Consultation',
     description:
       'Meet our expert to discuss your skin concerns, medical history, and goals. We will assess your skin and answer all your questions in a relaxed setting.',
-    image: '/src/assets/images/consultation.png',
+    image: '/assets/images/consultation.png',
   },
   {
     title: 'Personalized Treatment Plan',
     description:
       'Receive a bespoke treatment plan designed specifically for your skin type and concerns, with clear explanations of each recommended procedure.',
-    image: '/src/assets/images/personalized.png',
+    image: '/assets/images/personalized.png',
   },
   {
     title: 'Treatment & Ongoing Care',
     description:
       'Begin your treatment journey with professional care throughout. We provide ongoing support and follow-ups to ensure optimal results.',
-    image: '/src/assets/images/treatmentOngoing.png',
+    image: '/assets/images/treatmentOngoing.png',
   },
 ]
 

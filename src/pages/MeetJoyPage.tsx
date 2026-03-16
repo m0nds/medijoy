@@ -6,19 +6,19 @@ const PHILOSOPHY_ITEMS = [
     title: 'Client First Approach',
     description:
       'Your comfort, safety and satisfaction are at the heart of everything we do.',
-    image: '/src/assets/images/clientCenteredCare.png',
+    image: '/assets/images/clientCenteredCare.png',
   },
   {
     title: 'Natural Enhancement',
     description:
       'We believe in enhancing your natural beauty, not changing who you are.',
-    image: '/src/assets/images/evidenceBased.png',
+    image: '/assets/images/evidenceBased.png',
   },
   {
     title: 'Education & Transparency',
     description:
       'We take time to explain every treatment so you feel informed and confident.',
-    image: '/src/assets/images/expertGuidance.png',
+    image: '/assets/images/expertGuidance.png',
   },
 ]
 
@@ -38,10 +38,10 @@ const APPROACH_ITEMS = [
 ]
 
 const CERTIFICATION_IMAGES = [
-  '/src/assets/images/certifcation1.png',
-  '/src/assets/images/certification2.png',
-  '/src/assets/images/certification3.png',
-  '/src/assets/images/certification4.png',
+  '/assets/images/certifcation1.png',
+  '/assets/images/certification2.png',
+  '/assets/images/certification3.png',
+  '/assets/images/certification4.png',
 ]
 
 export default function MeetJoyPage() {
@@ -65,7 +65,7 @@ export default function MeetJoyPage() {
           <div className="mt-8 sm:mt-12 grid gap-6 sm:gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">
             <div className="overflow-hidden rounded-xl shadow-md max-w-md mx-auto lg:max-w-none">
               <img
-                src="/src/assets/images/meetJoy.png"
+                src="/assets/images/meetJoy.png"
                 alt="Joy Marivate - Founder & Lead Aesthetician"
                 className="aspect-square w-full object-cover"
               />

@@ -29,7 +29,7 @@ export default function FaqPage() {
         {/* Optional hero image */}
         <div className="mt-6 sm:mt-10 overflow-hidden rounded-lg sm:rounded-xl">
           <img
-            src="/src/assets/images/faq.png"
+            src="/assets/images/faq.png"
             alt="FAQ"
             className="w-full h-40 sm:h-52 md:h-fit object-cover object-center"
           />

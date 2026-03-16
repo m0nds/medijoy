@@ -15,13 +15,13 @@ const testimonials = [
   {
     name: 'Ogala Esther',
     text: 'Results speak louder than words at Medijoy Aesthetics. After my first treatment, i couldn\'t help the glow afterwards',
-    image: '/src/assets/images/ogalaEsther.png',
+    image: '/assets/images/ogalaEsther.png',
     initial: null,
   },
   {
     name: 'Janet Holmes',
     text: 'Professional, knowledgeable, and caring. I trust Joy completely with my skincare journey',
-    image: '/src/assets/images/janetHolmes.png',
+    image: '/assets/images/janetHolmes.png',
     initial: null,
   },
   {

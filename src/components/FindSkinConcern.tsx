@@ -5,25 +5,25 @@ const concerns = [
   {
     title: 'Acne',
     description: 'Persistent breakouts affecting confidence',
-    image: '/src/assets/images/acne.png',
+    image: '/assets/images/acne.png',
     slug: 'acne-breakouts',
   },
   {
     title: 'Hyperpigmentation',
     description: 'Dark spots and uneven skin tones',
-    image: '/src/assets/images/hyperpigmentation.png',
+    image: '/assets/images/hyperpigmentation.png',
     slug: 'hyperpigmentation',
   },
   {
     title: 'Uneven Texture',
     description: 'Rough, bumpy skin surface',
-    image: '/src/assets/images/unevenTexture.png',
+    image: '/assets/images/unevenTexture.png',
     slug: 'uneven-texture',
   },
   {
     title: 'Dull Skin',
     description: 'Tired, lacklustre complexion',
-    image: '/src/assets/images/dullSkin.png',
+    image: '/assets/images/dullSkin.png',
     slug: 'dull-dehydrated-skin',
   },
 ]
