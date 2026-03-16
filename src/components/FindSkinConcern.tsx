@@ -56,6 +56,8 @@ export default function FindSkinConcern() {
                     src={image}
                     alt={title}
                     className="h-full w-full object-cover hover:scale-105 transition-all duration-300"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex-1 sm:p-3 sm:pt-2">

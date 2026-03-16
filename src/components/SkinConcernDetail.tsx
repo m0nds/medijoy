@@ -45,6 +45,8 @@ export default function SkinConcernDetail({
             src={heroImage}
             alt={title}
             className="w-full h-48 sm:h-64 md:h-80 object-cover"
+            loading="eager"
+            decoding="async"
           />
         </div>
         <h2 className="mt-6 sm:mt-8 text-xl sm:text-2xl md:text-3xl font-medium text-[#2D4700]">
@@ -73,6 +75,8 @@ export default function SkinConcernDetail({
                   src={image}
                   alt={tTitle}
                   className="h-full w-full object-cover hover:scale-105 transition-all duration-300"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="p-4">

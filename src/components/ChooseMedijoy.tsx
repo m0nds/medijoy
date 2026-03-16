@@ -46,7 +46,7 @@ export default function ChooseMedijoy() {
           {reasons.map(({ title, description, image }) => (
             <div key={title} className="flex flex-col items-center text-center">
               <div className="relative h-36 w-36 sm:h-44 sm:w-44 lg:h-48 lg:w-48 shrink-0 overflow-hidden rounded-full bg-slate-200">
-                <img src={image} alt={title} className="h-full w-full object-cover hover:scale-105 transition-all duration-300" />
+                <img src={image} alt={title} className="h-full w-full object-cover hover:scale-105 transition-all duration-300" loading="lazy" decoding="async" />
               </div>
               <h3 className="mt-4 sm:mt-5 text-lg sm:text-xl font-semibold text-[#1a1a1a]">{title}</h3>
               <p className="mt-1.5 sm:mt-2 max-w-sm text-xs sm:text-sm leading-relaxed text-black font-light px-2">

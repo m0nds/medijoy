@@ -70,6 +70,8 @@ export default function ServicesPage() {
                 src={service.image}
                 alt={service.title}
                 className="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="p-4">

@@ -40,7 +40,9 @@ export default function ProvenResults() {
               <img
                 src={image}
                 alt={`Proven result ${i + 1}`}
-                className="w-full  object-cover"
+                className="w-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           ))}

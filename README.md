@@ -125,6 +125,14 @@ src/
 
 ---
 
+## Image performance
+
+- **Critical assets** (logo, hero backgrounds) are preloaded in `index.html` and the logo uses `fetchPriority="high"`.
+- **Below-the-fold images** use `loading="lazy"` and `decoding="async"` so they load as the user scrolls and don’t block the main thread.
+- For even faster loads in production, compress images in `public/assets/` (e.g. with [Squoosh](https://squoosh.app/) or convert to WebP) and keep dimensions reasonable for their display size.
+
+---
+
 ## Design tokens
 
 Global CSS variables in `src/index.css`:

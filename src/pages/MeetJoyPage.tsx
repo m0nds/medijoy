@@ -68,6 +68,8 @@ export default function MeetJoyPage() {
                 src="/assets/images/meetJoy.png"
                 alt="Joy Marivate - Founder & Lead Aesthetician"
                 className="aspect-square w-full object-cover"
+                loading="eager"
+                decoding="async"
               />
             </div>
             <div>
@@ -116,6 +118,8 @@ export default function MeetJoyPage() {
                     src={image}
                     alt=""
                     className="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <h3 className="mt-4 sm:mt-5 text-base sm:text-lg font-semibold text-[#1a1a1a]">
@@ -167,6 +171,8 @@ export default function MeetJoyPage() {
                   src={src}
                   alt={`Certification ${i + 1}`}
                   className="w-full aspect-[4/3] object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             ))}

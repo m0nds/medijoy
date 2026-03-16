@@ -59,6 +59,8 @@ export default function ProvenResultsPage() {
                 src={result.image}
                 alt={result.treatmentName}
                 className="w-full h-56 object-cover hover:scale-105 transition-all duration-300"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           ))}

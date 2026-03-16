@@ -45,7 +45,7 @@ export default function SupportSkinJourney() {
             >
               <div className="w-full bg-slate-200 ">
                 {image ? (
-                  <img src={image} alt={title} className="h-full w-full object-cover hover:scale-105 transition-all duration-300" />
+                  <img src={image} alt={title} className="h-full w-full object-cover hover:scale-105 transition-all duration-300" loading="lazy" decoding="async" />
                 ) : (
                   <div className=" w-full" />
                 )}

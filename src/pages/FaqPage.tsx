@@ -32,6 +32,8 @@ export default function FaqPage() {
             src="/assets/images/faq.png"
             alt="FAQ"
             className="w-full h-40 sm:h-52 md:h-fit object-cover object-center"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 

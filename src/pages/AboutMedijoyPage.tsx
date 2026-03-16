@@ -62,6 +62,8 @@ export default function AboutMedijoyPage() {
               src="/assets/images/aboutMedijoyClinic.png"
               alt="Reception at Medijoy Aesthetics Clinic"
               className="w-full h-56 sm:h-72 md:h-80 lg:h-full object-cover"
+              loading="eager"
+              decoding="async"
             />
           </div>
           <p className="mt-6 text-sm sm:text-base text-center text-[#333333] leading-relaxed max-w-3xl mx-auto">
@@ -92,7 +94,7 @@ export default function AboutMedijoyPage() {
             With over 40 years of experience in medical aesthetics and a passion for skin health,
             we combine clinical expertise with a warm, welcoming approach.
           </p>
-          <img src="/assets/images/ourStory.png" alt="Our Story" className="mt-8 w-full h-full object-cover" />
+          <img src="/assets/images/ourStory.png" alt="Our Story" className="mt-8 w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
       </section>
 
@@ -109,7 +111,7 @@ export default function AboutMedijoyPage() {
             {PHILOSOPHY_ITEMS.map(({ title, description, image }) => (
               <div key={title} className="flex flex-col items-center text-center">
                 <div className="relative h-20 w-20 sm:h-24 sm:w-24 shrink-0 overflow-hidden rounded-full bg-slate-200">
-                  <img src={image} alt="" className="h-full w-full object-cover" />
+                  <img src={image} alt="" className="h-full w-full object-cover" loading="lazy" decoding="async" />
                 </div>
                 <h3 className="mt-4 sm:mt-5 text-base sm:text-lg font-semibold text-[#1a1a1a]">
                   {title}
@@ -139,7 +141,7 @@ export default function AboutMedijoyPage() {
                 className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm flex flex-col"
               >
                 <div className="w-full bg-slate-100 h-40 sm:h-44 overflow-hidden">
-                  <img src={image} alt={title} className="w-full h-full object-cover" />
+                  <img src={image} alt={title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                 </div>
                 <div className="p-4 flex-1 flex flex-col">
                   <h3 className="text-base sm:text-lg font-semibold text-[#1a1a1a]">{title}</h3>

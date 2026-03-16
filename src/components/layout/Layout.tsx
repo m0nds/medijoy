@@ -69,7 +69,7 @@ export function Layout({ children }: LayoutProps) {
       <header className="sticky top-0 z-40 w-full bg-[var(--page-bg)] shrink-0 border-b border-slate-200/60 lg:border-0">
         <nav className="flex px-4 sm:px-6 lg:mx-14 items-center justify-between gap-4 py-4 sm:py-5 lg:py-6">
           <Link to="/" className="flex items-center gap-2 text-[#1a1a1a] hover:opacity-90 shrink-0" onClick={() => setMenuOpen(false)}>
-            <img src='/assets/logo/medijoyLogo.png' alt='Medijoy Logo' className='h-7 w-auto sm:h-8 max-w-[140px] sm:max-w-none' />
+            <img src="/assets/logo/medijoyLogo.png" alt="Medijoy Logo" className="h-7 w-auto sm:h-8 max-w-[140px] sm:max-w-none" fetchPriority="high" decoding="async" width="140" height="32" />
           </Link>
 
           {/* Desktop nav - hidden on mobile/tablet */}
@@ -90,7 +90,7 @@ export function Layout({ children }: LayoutProps) {
             <a 
               href="https://api.whatsapp.com/send/?phone=447404964889&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"
             className="text-[#1a1a1a] hover:opacity-80 lg:hidden">
-              <img src='/assets/images/whatsappImage.png' alt='Medijoy Logo' className='h-8 w-8 ' />
+              <img src="/assets/images/whatsappImage.png" alt="" className="h-8 w-8" loading="lazy" decoding="async" width="32" height="32" />
             </a>
             <button
               type="button"

@@ -44,11 +44,15 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
               src={image}
               alt={title}
               className="h-48 sm:h-80 w-full sm:w-1/2 object-cover"
+              loading="lazy"
+              decoding="async"
             />
             <img
               src={image}
               alt={`${title} results`}
               className="h-48 sm:h-80 w-full sm:w-1/2 object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div

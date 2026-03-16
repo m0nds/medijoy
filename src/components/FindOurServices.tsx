@@ -56,6 +56,8 @@ export default function FindOurServices() {
                       src={image}
                       alt={title}
                       className="h-full w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="w-full h-full" />

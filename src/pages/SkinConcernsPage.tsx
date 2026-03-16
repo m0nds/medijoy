@@ -59,6 +59,8 @@ export default function SkinConcernsPage() {
                   src={image}
                   alt={title}
                   className="h-32 w-full object-cover hover:scale-105 transition-all duration-300"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="p-4 lg:px-6 lg:py-8">
@@ -94,6 +96,8 @@ export default function SkinConcernsPage() {
                   src={image}
                   alt={title}
                   className="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <h3 className="mt-4 sm:mt-5 text-base sm:text-lg font-semibold text-[#1a1a1a]">

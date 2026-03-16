@@ -36,6 +36,8 @@ export default function MeetCeo() {
           <div className="overflow-hidden rounded-xl shadow-md max-w-md mx-auto lg:max-w-none">
             <img
               src="/assets/images/meetJoy.png"
+              loading="lazy"
+              decoding="async"
               alt="Joy - Founder & Lead Aesthetics Practitioner"
               className="aspect-square w-full object-cover"
             />
@@ -69,7 +71,7 @@ export default function MeetCeo() {
           {qualifications.map(({ title, description, image }) => (
             <div key={title} className="flex flex-col items-center text-center">
               <div className="relative h-14 w-14 sm:h-[70px] sm:w-[70px] shrink-0 overflow-hidden rounded-full bg-slate-200">
-                <img src={image} alt="" className="h-full w-full object-cover" />
+                <img src={image} alt="" className="h-full w-full object-cover" loading="lazy" decoding="async" />
               </div>
               <h3 className="mt-3 sm:mt-4 text-base sm:text-lg font-semibold text-[#1a1a1a]">{title}</h3>
               <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm leading-relaxed text-[#1a1a1a] px-1">

@@ -52,7 +52,7 @@ export default function WhatClientsSay() {
               <div className="flex flex-col items-center text-center">
                 {image ? (
                   <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0 overflow-hidden rounded-full bg-slate-200">
-                    <img src={image} alt="" className="h-full w-full object-cover" />
+                    <img src={image} alt="" className="h-full w-full object-cover" loading="lazy" decoding="async" />
                   </div>
                 ) : (
                   <div className="flex h-14 w-14 sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-full bg-[#4285F4] text-lg sm:text-xl font-semibold text-white">
