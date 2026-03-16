@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
+import ScrollToTop from './components/ScrollToTop'
 import HeroSection from './components/HeroSection'
 import SupportSkinJourney from './components/SupportSkinJourney'
 import ChooseMedijoy from './components/ChooseMedijoy'
@@ -36,7 +37,9 @@ function HomePage() {
 
 function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route path="/" element={<Layout><HomePage /></Layout>} />
       <Route
         path="/about-medijoy"
@@ -71,6 +74,7 @@ function App() {
         element={<Layout><FaqPage /></Layout>}
       />
     </Routes>
+    </>
   )
 }
 

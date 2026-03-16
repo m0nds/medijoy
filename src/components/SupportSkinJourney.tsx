@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const journeyItems = [
   {
     title: 'Book Paid Consultation',
@@ -56,10 +58,10 @@ export default function SupportSkinJourney() {
           ))}
         </div>
         <div className="mt-12 sm:mt-20 flex justify-center">
-          <a href="/about-medijoy" className="rounded-4xl bg-[#89A35D] w-full md:w-auto text-center px-8 py-4 sm:px-16 sm:py-3 text-white hover:opacity-95 text-lg sm:text-base">
+          <Link to="/about-medijoy" className="rounded-4xl bg-[#89A35D] w-full md:w-auto text-center px-8 py-4 sm:px-16 sm:py-3 text-white hover:opacity-95 text-lg sm:text-base">
            
             Learn more about our support
-          </a>
+          </Link>
         </div>
       </div>
     </section>

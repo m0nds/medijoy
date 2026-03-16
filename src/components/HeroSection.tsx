@@ -27,7 +27,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full bg-no-repeat bg-cover bg-center rounded-none sm:rounded-2xl mb-4"
+      className="relative w-full bg-no-repeat bg-cover bg-center rounded-2xl sm:rounded-2xl mb-4"
       style={{ backgroundImage: `url(${responsiveImage})` }}
     >
       <div className="mx-auto grid min-h-[70vh] sm:min-h-[80vh] pt-36 lg:min-h-[85vh] items-center gap-6 sm:gap-8 px-4 sm:px-6 lg:px-8 py-12 sm:py-16">

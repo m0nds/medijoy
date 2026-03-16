@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { ChevronRight } from 'lucide-react'
+import { Link, useNavigate } from 'react-router-dom'
+import { ChevronLeftIcon, ChevronRight } from 'lucide-react'
 import ProvenResults from './ProvenResults'
 
 export type TreatmentCard = {
@@ -25,15 +25,21 @@ export default function SkinConcernDetail({
   howWeHelp,
   treatments,
 }: SkinConcernDetailProps) {
+  const navigate = useNavigate()
+  const handleHistoryBack = () => {
+    navigate(-1)
+  }
   return (
-    <section id={id} className="py-10 sm:py-14 lg:py-16 pt-14 sm:pt-16 lg:pt-20 scroll-mt-20 sm:scroll-mt-24 bg-[var(--page-bg)]">
+    <section id={id} className="py-10 sm:py-14 lg:py-16 pt-2 sm:pt-16 lg:pt-8 scroll-mt-20 sm:scroll-mt-24 bg-[var(--page-bg)]">
       <div className="mx-auto w-full px-4 sm:px-6 ">
-        <Link
-          to="/skin-concerns"
-          className="mb-4 sm:mb-6 inline-flex items-center text-xs sm:text-sm text-[var(--medijoy-green)] hover:underline"
-        >
-          ← Back to Skin Concerns
-        </Link>
+        <div className="flex items-center gap-16 lg:justify-center mb-4">
+         <Link to="" className="block lg:hidden bg-gray-200 rounded-full p-2" onClick={handleHistoryBack}>
+         <ChevronLeftIcon className="w-5 h-5" />
+         </Link>
+         <div className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700]">
+          {title}
+         </div>
+        </div>
         <div className="overflow-hidden rounded-lg sm:rounded-xl shadow-sm">
           <img
             src={heroImage}
