@@ -17,6 +17,7 @@ export type ServiceCard = {
   priceFrom: number
   duration: string
   categorySlug: string
+  detailImage?: string
 }
 
 export type ServiceDetail = ServiceCard & {
@@ -28,6 +29,23 @@ export type ServiceDetail = ServiceCard & {
   resultWeeks?: number
   addOns: ServiceAddOn[]
 }
+
+import {
+  antiAgingProven,
+  chemicalPeelProven,
+  crowFeetProven,
+  deepCleansingProven,
+  dermalFillersProven,
+  dermabrasionProven,
+  foreheadLinesProven,
+  hydratingFacialProven,
+  jawlineProven,
+  microneedlingProven,
+  profhiloProven,
+  prpProven,
+  skinboosterProven,
+  underEyesProven,
+} from '../assets/images/proven results'
 
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   { slug: 'facial-treatment', label: 'Facial Treatment' },
@@ -51,6 +69,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 120,
     duration: '35 Mins',
     categorySlug: 'skin-boosters',
+    detailImage: profhiloProven,
   },
   {
     slug: 'hydrating-skin-booster',
@@ -60,6 +79,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 100,
     duration: '30 Mins',
     categorySlug: 'skin-boosters',
+    detailImage: skinboosterProven,
   },
   {
     slug: 'dermal-fillers',
@@ -69,6 +89,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 195,
     duration: '30 Mins',
     categorySlug: 'skin-boosters',
+    detailImage: dermalFillersProven,
   },
   {
     slug: 'under-eye-booster',
@@ -78,6 +99,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 80,
     duration: '30 Mins',
     categorySlug: 'skin-boosters',
+    detailImage: underEyesProven,
   },
   {
     slug: 'deep-cleansing-facial',
@@ -87,6 +109,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 50,
     duration: '40 - 60 Mins',
     categorySlug: 'facial-treatment',
+    detailImage: deepCleansingProven,
   },
   {
     slug: 'chin-jawline-contouring',
@@ -96,6 +119,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 200,
     duration: '45 - 60 Mins',
     categorySlug: 'facial-treatment',
+    detailImage: jawlineProven,
   },
   {
     slug: 'chin-jawline-contouring',
@@ -105,6 +129,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 200,
     duration: '45 - 60 Mins',
     categorySlug: 'advanced-treatment',
+    detailImage: jawlineProven,
   },
   {
     slug: 'hydrating-facial',
@@ -114,6 +139,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 50,
     duration: '40 Mins',
     categorySlug: 'facial-treatment',
+    detailImage: hydratingFacialProven,
   },
   {
     slug: 'anti-ageing-facial',
@@ -123,6 +149,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 90,
     duration: '40 - 60 Mins',
     categorySlug: 'facial-treatment',
+    detailImage: antiAgingProven,
   },
   {
     slug: 'microneedling',
@@ -132,6 +159,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 200,
     duration: '45 - 75 Mins',
     categorySlug: 'facial-treatment',
+    detailImage: microneedlingProven,
   },
   {
     slug: 'microneedling',
@@ -141,6 +169,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 200,
     duration: '45 - 75 Mins',
     categorySlug: 'advanced-treatment',
+    detailImage: microneedlingProven,
   },
   {
     slug: 'dermabrasion',
@@ -150,6 +179,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 90,
     duration: '45 Mins',
     categorySlug: 'facial-treatment',
+    detailImage: dermabrasionProven,
   },
   {
     slug: 'dermabrasion',
@@ -159,6 +189,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 90,
     duration: '45 Mins',
     categorySlug: 'advanced-treatment',
+    detailImage: dermabrasionProven,
   },
   {
     slug: 'chemical-peel',
@@ -168,6 +199,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 85,
     duration: '35 - 40 Mins',
     categorySlug: 'botox',
+    detailImage: chemicalPeelProven,
   },
   {
     slug: 'prp-vampire-facial',
@@ -177,6 +209,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 200,
     duration: '45 - 60 Mins',
     categorySlug: '',
+    detailImage: prpProven,
   },
   {
     slug: 'forehead-lines',
@@ -186,6 +219,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 150,
     duration: '45 Mins',
     categorySlug: 'botox',
+    detailImage: foreheadLinesProven,
   },
   {
     slug: 'crows-feet',
@@ -195,6 +229,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 100,
     duration: '45 Mins',
     categorySlug: 'botox',
+    detailImage: crowFeetProven,
   },
   {
     slug: 'jawline-contouring',
@@ -204,6 +239,7 @@ export const SERVICES: ServiceCard[] = [
     priceFrom: 200,
     duration: '60 - 75 Mins',
     categorySlug: '',
+    detailImage: jawlineProven,
   },
 ]
 

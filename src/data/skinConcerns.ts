@@ -2,6 +2,10 @@ export type TreatmentCard = {
   title: string
   description: string
   image: string
+  /** Link to this service detail page when present */
+  serviceSlug?: string
+  /** Otherwise link to services page with this category active */
+  categorySlug?: string
 }
 
 export type SkinConcernDetail = {
@@ -74,11 +78,13 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
         image: '/assets/images/microneedling.png',
+        serviceSlug: 'microneedling',
       },
       {
         title: 'PRP Vampire Facial',
         description: 'Use your own growth factors to accelerate skin healing',
         image: '/assets/images/prpVampireFacial.png',
+        serviceSlug: 'prp-vampire-facial',
       },
     ],
   },
@@ -95,12 +101,14 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
         image: '/assets/images/microneedling.png',
+        serviceSlug: 'microneedling',
       },
       {
         title: 'Chemical Peel',
         description:
           'Resurface skin to improve texture, clarity & overall tone.',
         image: '/assets/images/chemicalPeels.png',
+        serviceSlug: 'chemical-peel',
       },
     ],
   },
@@ -117,11 +125,13 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
         image: '/assets/images/microneedling.png',
+        serviceSlug: 'microneedling',
       },
       {
         title: 'PRP Vampire Facial',
         description: 'Use your own growth factors to accelerate skin healing',
         image: '/assets/images/prpVampireFacial.png',
+        serviceSlug: 'prp-vampire-facial',
       },
     ],
   },
@@ -138,11 +148,13 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
         title: 'Facials',
         description: 'Deep cleansing hydration and rejuvenation.',
         image: '/assets/images/facials.png',
+        categorySlug: 'facial-treatment',
       },
       {
         title: 'PRP Vampire Facial',
         description: 'Use your own growth factors to accelerate skin healing',
         image: '/assets/images/prpVampireFacial.png',
+        serviceSlug: 'prp-vampire-facial',
       },
     ],
   },
@@ -159,11 +171,13 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
         title: 'Dermabrasion',
         description: 'Exfoliation and peach fuzz removal to improve texture.',
         image: '/assets/images/dermabrasion.png',
+        serviceSlug: 'dermabrasion',
       },
       {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
         image: '/assets/images/microneedling.png',
+        serviceSlug: 'microneedling',
       },
     ],
   },
@@ -180,11 +194,13 @@ export const SKIN_CONCERN_DETAILS: Record<string, SkinConcernDetail> = {
         title: 'Dermabrasion',
         description: 'Exfoliation and peach fuzz removal to improve texture.',
         image: '/assets/images/dermabrasion.png',
+        serviceSlug: 'dermabrasion',
       },
       {
         title: 'Microneedling',
         description: 'Stimulates collagen production to improve scar texture.',
         image: '/assets/images/microneedling.png',
+        serviceSlug: 'microneedling',
       },
     ],
   },

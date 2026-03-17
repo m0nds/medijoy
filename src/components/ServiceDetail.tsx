@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import type { ServiceDetail as ServiceDetailType } from '../data/services'
+import { ChevronLeftIcon } from 'lucide-react'
 
 type ServiceDetailProps = {
   service: ServiceDetailType
@@ -9,6 +10,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
   const {
     title,
     image,
+    detailImage,
     overview,
     benefits,
     priceFrom,
@@ -16,53 +18,42 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
     duration,
     downtime,
     sessionsOrResults,
-    resultWeeks,
     addOns,
   } = service
 
+  const resultImage = detailImage ?? image
+
+  const navigate = useNavigate()
+  const handleHistoryBack = () => {
+    navigate(-1)
+  }
+
   return (
-    <article className="py-10 sm:py-14 lg:py-16 pt-14 sm:pt-16 lg:pt-20">
+    <article className="py-10 sm:py-14 lg:py-16 pt-2 sm:pt-16 lg:pt-8">
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
-        <Link
-          to="/services"
-          className="mb-4 sm:mb-6 inline-flex items-center text-xs sm:text-sm text-[var(--medijoy-green)] hover:underline"
-        >
-          ← Back to Services
-        </Link>
+        <div className="flex items-center justify-between lg:justify-center mb-4">
+          <Link to="" className="block lg:hidden bg-gray-200 rounded-full p-2" onClick={handleHistoryBack}>
+            <ChevronLeftIcon className="w-5 h-5" />
+          </Link>
+          <div className="text-center text-xl sm:text-2xl md:text-3xl font-medium text-[#2D4700]">
+            {title}
+          </div>
+          <div></div>
+        </div>
 
-        <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-semibold text-[#2D4700] px-2">
-          {title}
-        </h1>
-
-        {/* Before & After / Hero image */}
+        {/* Proven result image */}
         <div className="mt-6 sm:mt-8 overflow-hidden rounded-lg sm:rounded-xl bg-white shadow-sm">
           <div
             className="flex flex-col sm:flex-row"
             style={{ backgroundColor: 'var(--medijoy-beige)' }}
           >
             <img
-              src={image}
-              alt={title}
-              className="h-48 sm:h-80 w-full sm:w-1/2 object-cover"
-              loading="lazy"
-              decoding="async"
-            />
-            <img
-              src={image}
+              src={resultImage}
               alt={`${title} results`}
-              className="h-48 sm:h-80 w-full sm:w-1/2 object-cover"
+              className="h-full w-full object-cover"
               loading="lazy"
               decoding="async"
             />
-          </div>
-          <div
-            className="flex justify-between items-center gap-2 px-3 sm:px-4 py-2.5 sm:py-3 text-[#1a1a1a] text-sm sm:text-base"
-            style={{ backgroundColor: 'var(--medijoy-beige)' }}
-          >
-            <span className="font-medium truncate">{title}</span>
-            {resultWeeks != null && (
-              <span className="text-xs sm:text-sm shrink-0">{resultWeeks} Weeks</span>
-            )}
           </div>
         </div>
         <p className="mt-2 text-center text-xs sm:text-sm italic text-slate-600 px-2">
@@ -91,7 +82,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
           >
             <div className="flex flex-wrap gap-2 sm:gap-4 items-center">
               <p className="text-xs sm:text-sm text-[#333333]">From</p>
-              <p className="text-2xl sm:text-4xl font-bold text-[#1a1a1a]">
+              <p className="text-4xl sm:text-4xl font-bold text-[#1a1a1a]">
                 £{priceFrom}
               </p>
               <p className="text-xs sm:text-sm text-[#333333]">Save {savePercent}%</p>
@@ -110,13 +101,13 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
           {addOns.map((addOn) => (
             <li
               key={addOn.title}
-              className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-1 sm:gap-2 rounded-lg sm:rounded-xl bg-white px-3 py-2.5 sm:px-4 sm:py-3 border border-slate-100"
+              className="flex sm:flex-wrap items-center justify-between gap-1 sm:gap-2 rounded-lg sm:rounded-xl bg-white px-3 py-2.5 sm:px-4 sm:py-3 border border-slate-100"
             >
               <div className="min-w-0">
                 <p className="font-medium text-sm sm:text-base text-[#1a1a1a]">{addOn.title}</p>
                 <p className="text-xs sm:text-sm text-slate-600">{addOn.description}</p>
               </div>
-              <span className="font-medium text-sm sm:text-base text-[#1a1a1a] shrink-0">
+              <span className="font-semibold text-sm sm:text-base text-[#1a1a1a] shrink-0">
                 +£{addOn.price}
               </span>
             </li>

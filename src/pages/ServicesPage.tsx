@@ -24,14 +24,15 @@ export default function ServicesPage() {
 
   return (
     <section id="services" className="pb-12 sm:pb-20 pt-6 sm:pt-8">
-      <div className="flex items-center gap-20 lg:justify-center">
-         <Link to="/" className="block lg:hidden bg-gray-200 rounded-full p-2">
-         <ChevronLeftIcon className="w-5 h-5" />
-         </Link>
-      <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700] px-2">
-        Find Our Services
-      </h2>
-         </div>
+      <div className="flex items-center justify-between lg:justify-center">
+        <Link to="/" className="block lg:hidden bg-gray-200 rounded-full p-2">
+          <ChevronLeftIcon className="w-5 h-5" />
+        </Link>
+        <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700] px-2">
+          Find Our Services
+        </h2>
+        <div></div>
+      </div>
       <p className="mx-auto mt-2 sm:mt-3 max-w-2xl text-center text-sm sm:text-base text-slate-600 px-4">
         Each service is designed to address specific concerns with expert care
         and precision.
@@ -42,7 +43,7 @@ export default function ServicesPage() {
         className="mt-6 sm:mt-10 flex overflow-x-auto px-2 lg:justify-center gap-2 no-scrollbar"
         aria-label="Service categories"
       >
-          {SERVICE_CATEGORIES.map(({ slug, label }) => (
+        {SERVICE_CATEGORIES.map(({ slug, label }) => (
           <button
             key={slug}
             type="button"

@@ -49,13 +49,14 @@ export default function AboutMedijoyPage() {
       {/* About Medijoy */}
       <section className="pb-12 sm:pb-16 lg:pb-20 pt-6 sm:pt-8">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="flex items-center gap-20 lg:justify-center">
+          <div className="flex items-center justify-between lg:justify-center">
          <Link to="/" className="block lg:hidden bg-gray-200 rounded-full p-2">
          <ChevronLeftIcon className="w-5 h-5" />
          </Link>
           <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700]">
             About Medijoy
           </h1>
+          <div></div>
           </div>
           <div className="mt-6 sm:mt-8 overflow-hidden rounded-lg sm:rounded-xl shadow-sm">
             <img

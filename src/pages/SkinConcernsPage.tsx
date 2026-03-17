@@ -34,13 +34,14 @@ export default function SkinConcernsPage() {
     <>
       {/* Find Skin Concerns */}
       <section className="pb-12 sm:pb-20 pt-6 sm:pt-8 px-0">
-        <div className="flex items-center gap-20 lg:justify-center">
+        <div className="flex items-center justify-between lg:justify-center">
          <Link to="/" className="block lg:hidden bg-gray-200 rounded-full p-2">
          <ChevronLeftIcon className="w-5 h-5" />
          </Link>
         <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700] px-2">
           Find Skin Concerns
         </h2>
+        <div></div>
          </div>
         <p className="mx-auto mt-2 sm:mt-3 w-full text-center text-sm sm:text-base max-w-3xl text-black px-4">
           Every skin journey is different. Whether you are dealing with

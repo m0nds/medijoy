@@ -13,13 +13,14 @@ export default function FaqPage() {
   return (
     <section id="faqs" className="pb-12 sm:pb-20 pt-6 sm:pt-8">
       <div className="px-4 sm:px-6">
-        <div className="flex items-center gap-20 lg:justify-center">
+        <div className="flex items-center justify-between lg:justify-center">
          <Link to="/" className="block lg:hidden bg-gray-200 rounded-full p-2">
          <ChevronLeftIcon className="w-5 h-5" />
          </Link>
         <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700] px-2">
           FAQs
         </h2>
+        <div></div>
          </div>
         <p className="mx-auto mt-2 sm:mt-3 max-w-2xl text-center text-sm sm:text-base text-[#333333] px-2">
           Everything you need to know about treatments, consultations, and

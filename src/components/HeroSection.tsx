@@ -43,7 +43,7 @@ export default function HeroSection() {
             href="https://booking.appointy.com/en-US/revivetherapies/bookings/service"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 sm:mt-8 w-full  md:mx-auto inline-block rounded-full bg-[var(--medijoy-green)] px-8 py-5 sm:px-12 sm:py-3.5 font-medium text-white hover:opacity-95 text-base sm:text-base"
+            className="mt-6 sm:mt-8 w-full md:w-fit md:mx-auto inline-block rounded-full bg-[var(--medijoy-green)] px-8 py-5 sm:px-12 sm:py-3.5 font-medium text-white hover:opacity-95 text-base sm:text-base"
           >
             Book a Consultation
           </a>

@@ -1,11 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { ChevronLeftIcon, ChevronRight } from 'lucide-react'
-import ProvenResults from './ProvenResults'
+import { PROVEN_RESULTS } from '../data/provenResults'
 
 export type TreatmentCard = {
   title: string
   description: string
   image: string
+  serviceSlug?: string
+  categorySlug?: string
 }
 
 type SkinConcernDetailProps = {
@@ -32,13 +34,14 @@ export default function SkinConcernDetail({
   return (
     <section id={id} className="py-10 sm:py-14 lg:py-16 pt-2 sm:pt-16 lg:pt-8 scroll-mt-20 sm:scroll-mt-24 bg-[var(--page-bg)]">
       <div className="mx-auto w-full px-4 sm:px-6 ">
-        <div className="flex items-center gap-16 lg:justify-center mb-4">
-         <Link to="" className="block lg:hidden bg-gray-200 rounded-full p-2" onClick={handleHistoryBack}>
-         <ChevronLeftIcon className="w-5 h-5" />
-         </Link>
-         <div className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700]">
-          {title}
-         </div>
+        <div className="flex items-center justify-between lg:justify-center mb-4">
+          <Link to="" className="block lg:hidden bg-gray-200 rounded-full p-2" onClick={handleHistoryBack}>
+            <ChevronLeftIcon className="w-5 h-5" />
+          </Link>
+          <div className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700]">
+            {title}
+          </div>
+          <div></div>
         </div>
         <div className="overflow-hidden rounded-lg sm:rounded-xl shadow-sm">
           <img
@@ -65,33 +68,40 @@ export default function SkinConcernDetail({
           Recommended Treatment
         </h2>
         <div className="mt-4 sm:mt-6 grid gap-6 sm:gap-12 lg:gap-32 grid-cols-1 sm:grid-cols-2">
-          {treatments.map(({ title: tTitle, description, image }) => (
-            <div
-              key={tTitle}
-              className="overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm"
-            >
-              <div className="w-full bg-slate-200 ">
-                <img
-                  src={image}
-                  alt={tTitle}
-                  className="h-full w-full object-cover hover:scale-105 transition-all duration-300"
-                  loading="lazy"
-                  decoding="async"
-                />
+          {treatments.map(({ title: tTitle, description, image, serviceSlug, categorySlug }) => {
+            const learnMoreTo = serviceSlug
+              ? `/services/${serviceSlug}`
+              : categorySlug
+                ? `/services?category=${categorySlug}`
+                : '/services'
+            return (
+              <div
+                key={tTitle}
+                className="overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm"
+              >
+                <div className="w-full bg-slate-200 ">
+                  <img
+                    src={image}
+                    alt={tTitle}
+                    className="h-full w-full object-cover hover:scale-105 transition-all duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-base sm:text-lg font-medium text-[#1a1a1a]">{tTitle}</h3>
+                  <p className="mt-1 text-xs sm:text-sm text-black">{description}</p>
+                  <Link
+                    to={learnMoreTo}
+                    className="mt-2 sm:mt-3 inline-flex items-center gap-1 text-xs sm:text-sm font-normal text-[var(--medijoy-green)] hover:underline"
+                  >
+                    Learn more
+                    <ChevronRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                  </Link>
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="text-base sm:text-lg font-medium text-[#1a1a1a]">{tTitle}</h3>
-                <p className="mt-1 text-xs sm:text-sm text-black">{description}</p>
-                <a
-                  href="/#services"
-                  className="mt-2 sm:mt-3 inline-flex items-center gap-1 text-xs sm:text-sm font-normal text-[var(--medijoy-green)] hover:underline"
-                >
-                  Learn more
-                  <ChevronRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                </a>
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         <div
@@ -104,8 +114,34 @@ export default function SkinConcernDetail({
             and how we can help.
           </p>
         </div>
-        <div className="mt-4 sm:mt-6 flex gap-4 sm:gap-6 overflow-x-auto pb-4 scroll-smooth px-1 [-webkit-overflow-scrolling:touch] snap-x snap-mandatory">
-         <ProvenResults/>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 mt-8">
+          <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700] px-2">
+            Proven Results
+          </h2>
+          <p className="mx-auto mt-2 sm:mt-3 max-w-2xl text-center text-sm sm:text-base text-[#333333] px-2">
+            Swipe through to see some results we are proud of achieving with our clients.
+          </p>
+          <p className="mx-auto mt-3 max-w-2xl text-center text-xs sm:text-xs text-[#333333] px-2 italic">
+            Before-and-after photos are available during your consultation to help you understand
+            what&apos;s possible.
+          </p>
+
+          <div className="mt-6 sm:mt-10 flex gap-4 sm:gap-6 overflow-x-auto pb-4 scroll-smooth px-1 [-webkit-overflow-scrolling:touch] snap-x snap-mandatory no-scrollbar">
+            {PROVEN_RESULTS.map(({ image }, i) => (
+              <div
+                key={i}
+                className="min-w-[240px] sm:min-w-[280px] md:min-w-[320px] max-w-[90vw] sm:max-w-[480px] shrink-0 overflow-hidden rounded-xl bg-slate-100 shadow-[0_2px_8px_rgba(0,0,0,0.06)] snap-start"
+              >
+                <img
+                  src={image}
+                  alt={`Proven result ${i + 1}`}
+                  className="w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))}
+          </div>
         </div>
         <p className="mt-3 sm:mt-4 text-base text-slate-500  text-center sm:text-left italic">
           *Individual results may vary. Images shown with client consent.

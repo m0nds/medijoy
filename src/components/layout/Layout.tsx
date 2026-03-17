@@ -201,7 +201,7 @@ export function Layout({ children }: LayoutProps) {
                 <li><Link to="/skin-concerns" className="hover:underline">Skin Concern</Link></li>
                 <li><Link to="/services" className="hover:underline">Services</Link></li>
                 <li><Link to="/meet-joy" className="hover:underline">Meet Joy</Link></li>
-                <li><a href="https://api.whatsapp.com/send/?phone=447404964889&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:underline">Contact</a></li>
+                <li><a href="mailto:Medijoyaestheticsclinic@gmail.com" className="hover:underline">Contact</a></li>
               </ul>
             </div>
             <div>
@@ -215,8 +215,8 @@ export function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">Contact Us</h3>
               <ul className="mt-3 space-y-1.5 text-sm">
-                <li>77 Bedfont Ln, Feltham TW149BH</li>
-                <li>+44 7404 964889</li>
+                <li><a href="https://www.google.com/maps/search/?api=1&query=77+Bedfont+Ln,+Feltham+TW14+9BH" target="_blank" rel="noopener noreferrer" className="hover:underline">77 Bedfont Ln, Feltham TW14 9BH</a></li>
+                <li> <a href="tel:+447404964889" className="hover:underline">+44 7404 964889</a></li>
               </ul>
             </div>
           </div>
