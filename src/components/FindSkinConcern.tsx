@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
+import AppointmentModal from './modal/AppointmentModal'
 
 const concerns = [
   {
@@ -29,6 +31,8 @@ const concerns = [
 ]
 
 export default function FindSkinConcern() {
+  const [showBookingModal, setShowBookingModal] = useState(false)
+
   return (
     <section
       id="skin-concern"
@@ -83,10 +87,22 @@ export default function FindSkinConcern() {
           <h2 className="text-base lg:text-[24px] font-light text-black">
             Not sure which treatment you need?
           </h2>
-          <a href="https://booking.appointy.com/en-US/revivetherapies/bookings/service" target="_blank" rel="noopener noreferrer" className="mt-1 text-[#2D4700] lg:text-[24px] sm:text-base font-light"> 
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
+              setShowBookingModal(true)
+            }}
+            className="mt-1 text-[#2D4700] lg:text-[24px] sm:text-base font-light hover:underline"
+          >
             Book a consultation today.
-          </a>
+          </button>
         </div>
+
+        {showBookingModal && (
+          <AppointmentModal onClose={() => setShowBookingModal(false)} />
+        )}
       </div>
     </section>
   )

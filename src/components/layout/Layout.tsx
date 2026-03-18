@@ -2,6 +2,7 @@ import { type ReactNode, useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronUp } from 'lucide-react'
 import AreYouReady from '../AreYouReady'
+import AppointmentModal from '../modal/AppointmentModal'
 
 interface LayoutProps {
   children: ReactNode
@@ -19,6 +20,7 @@ const navLinks = [
 export function Layout({ children }: LayoutProps) {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [showBookingModal, setShowBookingModal] = useState(false)
   const isAboutActive = location.pathname === '/about-medijoy'
   const isSkinConcernActive = location.pathname.startsWith('/skin-concerns')
   const isServicesActive = location.pathname.startsWith('/services')
@@ -209,13 +211,21 @@ export function Layout({ children }: LayoutProps) {
               <ul className="mt-3 space-y-1.5 text-sm">
                 <li><Link to="/faqs" className="hover:underline">FAQs</Link></li>
                 <li><Link to="/proven-results" className="hover:underline">Proven Results</Link></li>
-                <li><a href="https://booking.appointy.com/en-US/revivetherapies/bookings/service" target="_blank" rel="noopener noreferrer" className="hover:underline">Booking a Consultation</a></li>
+                <li>
+                  <button
+                    type="button"
+                    onClick={() => setShowBookingModal(true)}
+                    className="hover:underline"
+                  >
+                    Booking a Consultation
+                  </button>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">Contact Us</h3>
               <ul className="mt-3 space-y-1.5 text-sm">
-                <li><a href="https://www.google.com/maps/search/?api=1&query=77+Bedfont+Ln,+Feltham+TW14+9BH" target="_blank" rel="noopener noreferrer" className="hover:underline">77 Bedfont Ln, Feltham TW14 9BH</a></li>
+                <li><a href="https://www.google.com/maps/search/?api=1&query=77+Bedfont+Ln,+Feltham+TW14+9BH" target="_blank" rel="noopener noreferrer" className="hover:underline">  7 Derwent Close, Feltham, TW14 9QL (from 77 Bedfont Ln)</a></li>
                 <li> <a href="tel:+447404964889" className="hover:underline">+44 7404 964889</a></li>
               </ul>
             </div>
@@ -225,6 +235,10 @@ export function Layout({ children }: LayoutProps) {
             © 2026 Medijoy. All rights reserved.
           </div>
         </div>
+
+        {showBookingModal && (
+          <AppointmentModal onClose={() => setShowBookingModal(false)} />
+        )}
       </footer>
     </div>
   )

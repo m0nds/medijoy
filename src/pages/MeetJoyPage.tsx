@@ -75,8 +75,8 @@ export default function MeetJoyPage() {
             </div>
             <div>
               <p className="text-left text-sm sm:text-base text-[#1a1a1a] leading-relaxed">
-                With over 40 years of experience as a qualified registered nurse
-                (RGN) and aesthetician, I founded Medijoy with a clear mission to
+                With over 40 years of experience as a qualified registered midwife
+                (RM) and aesthetician, I founded Medijoy with a clear mission to
                 restore confidence through personalized, results-driven treatment.
               </p>
               <p className="mt-3 sm:mt-4 text-left text-sm sm:text-base text-[#1a1a1a] leading-relaxed">
@@ -89,7 +89,7 @@ export default function MeetJoyPage() {
                 you.
               </p>
               <p className="mt-6 sm:mt-8 text-right text-sm sm:text-base font-normal text-[#1a1a1a]">
-                - Joy Marivate
+                - Sr. Joy Marivate
               </p>
               <p className="mt-1 text-right text-xs sm:text-sm font-semibold text-[#1a1a1a]">
                 Founder & Lead Aesthetician
@@ -189,7 +189,7 @@ export default function MeetJoyPage() {
             yourself. When you feel confident in your skin, it changes
             everything.
           </p>
-          <p className="mt-4 sm:mt-6 text-sm sm:text-base text-[#333333]">- Joy Marivate</p>
+          <p className="mt-4 sm:mt-6 text-sm sm:text-base text-[#333333]">- Sr. Joy Marivate</p>
           <p className="mt-1 text-xs sm:text-sm font-semibold text-[#333333]">
             CEO Founder Medijoy Aesthetics Clinic
           </p>

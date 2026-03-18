@@ -44,7 +44,7 @@ export default function MeetCeo() {
           </div>
           <div>
             <p className="text-left text-sm sm:text-base text-[#1a1a1a] leading-relaxed">
-              With over 40 years of experience as a qualified registered nurse (RGN) and
+              With over 40 years of experience as a qualified registered midwife (RM) and
               aesthetician, I founded Medijoy with a clear mission to restore confidence through
               personalised, results-driven treatment.
             </p>
@@ -56,7 +56,7 @@ export default function MeetCeo() {
               By listening closely, educating thoroughly, and designing bespoke treatment plans, I
               ensure you receive care that truly works for you.
             </p>
-            <p className="mt-6 sm:mt-8 text-right text-sm sm:text-base font-normal text-[#1a1a1a]">Dr. Joy Marivate</p>
+            <p className="mt-6 sm:mt-8 text-right text-sm sm:text-base font-normal text-[#1a1a1a]">Sr. Joy Marivate</p>
           </div>
         </div>
 

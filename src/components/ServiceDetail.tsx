@@ -30,7 +30,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
 
   return (
     <article className="py-10 sm:py-14 lg:py-16 pt-2 sm:pt-16 lg:pt-8">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6">
+      <div className="mx-auto max-w-4xl px-0 sm:px-6">
         <div className="flex items-center justify-between lg:justify-center mb-4">
           <Link to="" className="block lg:hidden bg-gray-200 rounded-full p-2" onClick={handleHistoryBack}>
             <ChevronLeftIcon className="w-5 h-5" />
@@ -56,7 +56,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
             />
           </div>
         </div>
-        <p className="mt-2 text-center text-xs sm:text-sm italic text-slate-600 px-2">
+        <p className="mt-2 text-center mx-auto max-w-[70%] sm:max-w-full text-xs sm:text-sm italic text-slate-600 px-2">
           *Individual results may vary, Images shown with client&apos;s consent
         </p>
 
@@ -77,7 +77,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
             </ul>
           </div>
           <div
-            className="h-fit rounded-xl px-4 py-4 sm:px-5 sm:py-5 flex-1 min-w-0"
+            className="h-fit rounded-xl px-4 py-4 sm:px-5 sm:py-5 flex-1 min-w-0 shadow"
             style={{ backgroundColor: 'var(--medijoy-beige)' }}
           >
             <div className="flex flex-wrap gap-2 sm:gap-4 items-center">
@@ -95,7 +95,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
 
         {/* Additional Add Ons */}
         <h2 className="mt-10 sm:mt-12 text-lg sm:text-xl font-semibold text-[#2D4700]">
-          Additional Add Ons
+          Optional Add Ons
         </h2>
         <ul className="mt-3 sm:mt-4 space-y-2 sm:space-y-3">
           {addOns.map((addOn) => (

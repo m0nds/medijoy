@@ -1,11 +1,13 @@
 import { useRef, useState, useEffect } from 'react'
 import CountUp from 'react-countup'
 import { useMobile } from '../hooks/useMobile'
+import AppointmentModal from './modal/AppointmentModal'
 
 export default function HeroSection() {
   const isMobile = useMobile()
   const statsRef = useRef<HTMLDivElement>(null)
   const [inView, setInView] = useState(false)
+  const [showBookingModal, setShowBookingModal] = useState(false)
 
   const responsiveImage = isMobile
     ? '/assets/images/mobileBackground.png'
@@ -39,19 +41,26 @@ export default function HeroSection() {
             Consultation led treatments, transparent pricing and natural results. At Medijoy your
             confidence begins with honest advice and expert care.
           </p>
-          <a
-            href="https://booking.appointy.com/en-US/revivetherapies/bookings/service"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
+              setShowBookingModal(true)
+            }}
             className="mt-6 sm:mt-8 w-full md:w-fit md:mx-auto inline-block rounded-full bg-[var(--medijoy-green)] px-8 py-5 sm:px-12 sm:py-3.5 font-medium text-white hover:opacity-95 text-base sm:text-base"
           >
             Book a Consultation
-          </a>
+          </button>
           <p className="mt-3 w-[70%] md:w-full sm:mt-4 mx-auto text-sm sm:text-sm font-normal text-[var(--medijoy-gold)]">
             £20 Consultation fee, redeemable against your treatment
           </p>
         </div>
       </div>
+
+      {showBookingModal && (
+        <AppointmentModal onClose={() => setShowBookingModal(false)} />
+      )}
 
       {/* Stats bar - full width at bottom of hero */}
       <div ref={statsRef} className="">

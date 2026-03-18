@@ -54,7 +54,7 @@ export default function ProvenResultsPage() {
           {results.map((result) => (
             <div
               key={result.id}
-              className="overflow-hidden rounded-xl border border-slate-200 bg-[#E5D0B0] shadow-sm"
+              className="overflow-hidden rounded-xl bg-[#E5D0B0] shadow-sm"
             >
               <img
                 src={result.image}
