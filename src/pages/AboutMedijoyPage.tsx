@@ -1,24 +1,33 @@
 import { ChevronLeftIcon } from "lucide-react"
 import { Link } from "react-router-dom"
 
+import aboutMedijoyClinicImage from '../assets/images/aboutMedijoyClinic.png'
+import ourStoryImage from '../assets/images/ourStory.png'
+import philosophy1Image from '../assets/images/philosophy1.png'
+import philosophy2Image from '../assets/images/philosophy2.png'
+import philosophy3Image from '../assets/images/philosophy3.png'
+
+import medicalGradeStandardImage from '../assets/images/medicalGradeStandard.png'
+import tailoredPlanImage from '../assets/images/tailoredPlan.png'
+import longTermRelationsImage from '../assets/images/longTermRelations.png'
 const PHILOSOPHY_ITEMS = [
   {
     title: 'Client First Approach',
     description:
       'Your comfort, safety and satisfaction are at the heart of everything we do.',
-    image: '/assets/images/clientCenteredCare.png',
+    image: philosophy1Image,
   },
   {
     title: 'Natural Enhancement',
     description:
       'We believe in enhancing your natural beauty, not changing who you are.',
-    image: '/assets/images/evidenceBased.png',
+    image: philosophy2Image,
   },
   {
     title: 'Education & Transparency',
     description:
       'We take time to explain every treatment so you feel informed and confident.',
-    image: '/assets/images/expertGuidance.png',
+    image: philosophy3Image,
   },
 ]
 
@@ -27,19 +36,19 @@ const DIFFERENCE_ITEMS = [
     title: 'Medical Grade Standard',
     description:
       'All treatments use premium, clinically proven products and techniques for maximum safety and efficacy.',
-    image: '/assets/images/medicalGradeStandard.png',
+    image: medicalGradeStandardImage,
   },
   {
     title: 'Tailored Skin Treatment Plan',
     description:
       'No two skin types are the same. We create personalised plans based on your unique concerns and goals.',
-    image: '/assets/images/tailoredPlan.png',
+    image: tailoredPlanImage,
   },
   {
     title: 'Long-Term Relationship',
     description:
       'We are here for your entire skin journey, from first consultation through ongoing maintenance and support.',
-    image: '/assets/images/longTermRelations.png',
+    image: longTermRelationsImage,
   },
 ]
 
@@ -60,7 +69,7 @@ export default function AboutMedijoyPage() {
           </div>
           <div className="mt-6 sm:mt-8 overflow-hidden rounded-lg sm:rounded-xl shadow-sm">
             <img
-              src="/assets/images/aboutMedijoyClinic.png"
+              src={aboutMedijoyClinicImage}
               alt="Reception at Medijoy Aesthetics Clinic"
               className="w-full h-56 sm:h-72 md:h-80 lg:h-full object-cover"
               loading="eager"
@@ -95,7 +104,7 @@ export default function AboutMedijoyPage() {
             With over 40 years of experience in medical aesthetics and a passion for skin health,
             we combine clinical expertise with a warm, welcoming approach.
           </p>
-          <img src="/assets/images/ourStory.png" alt="Our Story" className="mt-8 w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src={ourStoryImage} alt="Our Story" className="mt-8 w-full h-full object-cover rounded-xl" loading="lazy" decoding="async" />
         </div>
       </section>
 

@@ -1,24 +1,34 @@
 import { ChevronLeftIcon } from "lucide-react"
 import { Link } from "react-router-dom"
 
+import meetJoyImage from '../assets/images/meetJoy.png'
+import philosophy1Image from '../assets/images/philosophy1.png'
+import philosophy2Image from '../assets/images/philosophy2.png'
+import philosophy3Image from '../assets/images/philosophy3.png'
+
+import certifcation1Image from '../assets/images/certifcation1.png'
+import certification2Image from '../assets/images/certification2.png'
+import certification3Image from '../assets/images/certification3.png'
+import certification4Image from '../assets/images/certification4.png'
+
 const PHILOSOPHY_ITEMS = [
   {
     title: 'Client First Approach',
     description:
       'Your comfort, safety and satisfaction are at the heart of everything we do.',
-    image: '/assets/images/clientCenteredCare.png',
+    image: philosophy1Image,
   },
   {
     title: 'Natural Enhancement',
     description:
       'We believe in enhancing your natural beauty, not changing who you are.',
-    image: '/assets/images/evidenceBased.png',
+    image: philosophy2Image,
   },
   {
     title: 'Education & Transparency',
     description:
       'We take time to explain every treatment so you feel informed and confident.',
-    image: '/assets/images/expertGuidance.png',
+    image: philosophy3Image,
   },
 ]
 
@@ -38,10 +48,10 @@ const APPROACH_ITEMS = [
 ]
 
 const CERTIFICATION_IMAGES = [
-  '/assets/images/certifcation1.png',
-  '/assets/images/certification2.png',
-  '/assets/images/certification3.png',
-  '/assets/images/certification4.png',
+  certifcation1Image,
+  certification2Image,
+  certification3Image,
+  certification4Image,
 ]
 
 export default function MeetJoyPage() {
@@ -66,7 +76,7 @@ export default function MeetJoyPage() {
           <div className="mt-8 sm:mt-12 grid gap-6 sm:gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">
             <div className="overflow-hidden rounded-xl shadow-md max-w-md mx-auto lg:max-w-none">
               <img
-                src="/assets/images/meetJoy.png"
+                src={meetJoyImage}
                 alt="Joy Marivate - Founder & Lead Aesthetician"
                 className="aspect-square w-full object-cover"
                 loading="eager"
@@ -137,7 +147,7 @@ export default function MeetJoyPage() {
 
       {/* My approach to Aesthetics */}
       <section className="py-12 sm:py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700] px-2">
             My approach to Aesthetics
           </h2>
@@ -158,20 +168,20 @@ export default function MeetJoyPage() {
 
       {/* Certifications & Awards */}
       <section className="py-12 sm:py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#2D4700] px-2">
             Certifications & Awards
           </h2>
-          <div className="mt-8 sm:mt-12 grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2">
+          <div className="mt-8 sm:mt-12 grid gap-4 md:gap-20 grid-cols-1 sm:grid-cols-2">
             {CERTIFICATION_IMAGES.map((src, i) => (
               <div
                 key={i}
-                className="overflow-hidden rounded-lg sm:rounded-xl border border-slate-200 bg-white shadow-sm"
+                className="overflow-hidden"
               >
                 <img
                   src={src}
                   alt={`Certification ${i + 1}`}
-                  className="w-full aspect-[4/3] object-cover"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
                 />

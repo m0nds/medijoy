@@ -33,7 +33,7 @@ export default function HeroSection() {
       style={{ backgroundImage: `url(${responsiveImage})` }}
     >
       <div className="mx-auto grid min-h-[70vh] sm:min-h-[80vh] pt-36 lg:min-h-[85vh] items-center gap-6 sm:gap-8 px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="flex flex-col max-w-5xl mx-auto w-full px-0 sm:px-6 lg:px-16 text-center">
+        <div className="flex flex-col max-w-5xl mx-auto lg:-mx-14 w-full px-0 sm:px-6 lg:px-16 text-center">
           <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] font-bold leading-tight text-white">
             Medical-Led Aesthetic Care for Confident, Healthy Skin
           </h1>

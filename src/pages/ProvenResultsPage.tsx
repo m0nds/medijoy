@@ -50,7 +50,7 @@ export default function ProvenResultsPage() {
         </nav>
 
         {/* Results grid - before & after cards */}
-        <div className="mt-8 sm:mt-12 grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 sm:mt-12 grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
           {results.map((result) => (
             <div
               key={result.id}
@@ -59,7 +59,7 @@ export default function ProvenResultsPage() {
               <img
                 src={result.image}
                 alt={result.treatmentName}
-                className="w-full h-56 object-cover hover:scale-105 transition-all duration-300"
+                className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
               />

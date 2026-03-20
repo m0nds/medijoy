@@ -29,8 +29,8 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
   }
 
   return (
-    <article className="py-10 sm:py-14 lg:py-16 pt-2 sm:pt-16 lg:pt-8">
-      <div className="mx-auto max-w-4xl px-0 sm:px-6">
+    <article className="py-10 sm:py-14 lg:py-16 pt-2 sm:pt-16 lg:pt-8 lg:-mx-6">
+      <div className="w-full px-0 sm:px-6">
         <div className="flex items-center justify-between lg:justify-center mb-4">
           <Link to="" className="block lg:hidden bg-gray-200 rounded-full p-2" onClick={handleHistoryBack}>
             <ChevronLeftIcon className="w-5 h-5" />
@@ -42,10 +42,9 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
         </div>
 
         {/* Proven result image */}
-        <div className="mt-6 sm:mt-8 overflow-hidden rounded-lg sm:rounded-xl bg-white shadow-sm">
+        <div className="mt-6 sm:mt-8 overflow-hidden rounded-lg sm:rounded-xl shadow-sm">
           <div
             className="flex flex-col sm:flex-row"
-            style={{ backgroundColor: 'var(--medijoy-beige)' }}
           >
             <img
               src={resultImage}

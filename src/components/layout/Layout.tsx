@@ -69,7 +69,7 @@ export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col bg-[var(--page-bg)] text-[#1a1a1a]">
       <header className="sticky top-0 z-40 w-full bg-[var(--page-bg)] shrink-0 border-b border-slate-200/60 lg:border-0">
-        <nav className="flex px-4 sm:px-6 lg:mx-14 items-center justify-between gap-4 py-4 sm:py-5 lg:py-6">
+        <nav className="flex flex-wrap px-4 sm:px-6 lg:mx-14 items-center justify-between gap-4 py-4 sm:py-5 lg:py-6">
           <Link to="/" className="flex items-center gap-2 text-[#1a1a1a] hover:opacity-90 shrink-0" onClick={() => setMenuOpen(false)}>
             <img src="/assets/logo/medijoyLogo.png" alt="Medijoy Logo" className="h-7 w-auto sm:h-8 max-w-[140px] sm:max-w-none" fetchPriority="high" decoding="async" width="140" height="32" />
           </Link>
@@ -225,7 +225,7 @@ export function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">Contact Us</h3>
               <ul className="mt-3 space-y-1.5 text-sm">
-                <li><a href="https://www.google.com/maps/search/?api=1&query=77+Bedfont+Ln,+Feltham+TW14+9BH" target="_blank" rel="noopener noreferrer" className="hover:underline">  7 Derwent Close, Feltham, TW14 9QL (from 77 Bedfont Ln)</a></li>
+                <li><a href="https://www.google.com/maps/search/?api=1&query=7+Derwent+Close,+Feltham+TW14+9QL" target="_blank" rel="noopener noreferrer" className="hover:underline">7 Derwent Close, Feltham, TW14 9QL</a></li>
                 <li> <a href="tel:+447404964889" className="hover:underline">+44 7404 964889</a></li>
               </ul>
             </div>

@@ -75,23 +75,23 @@ export default function ServicesPage() {
                 decoding="async"
               />
             </div>
-            <div className="p-4">
+            <div className="p-4 flex flex-col">
               <h3 className="text-lg sm:text-xl font-medium text-[#1a1a1a]">
                 {service.title}
               </h3>
               <p className="mt-1 text-xs sm:text-sm text-slate-600">{service.description}</p>
-              <div className="mt-2 sm:mt-3 flex items-baseline justify-between gap-2 flex-wrap">
-                <span className="text-xs sm:text-sm font-medium text-[#1a1a1a]">
-                  From £{service.priceFrom}
+                <span className="text-xs sm:text-sm mt-3 font-medium text-[#1a1a1a]">
+                  From £ <span className="text-xl font-bold text-[#1a1a1a]">{service.priceFrom}</span>
                 </span>
+              <div className="mt-2 sm:mt-3 flex items-baseline justify-between gap-2 flex-wrap">
                 <span className="text-xs sm:text-sm text-slate-500">{service.duration}</span>
-              </div>
               <Link
                 to={`/services/${service.slug}`}
                 className="mt-2 sm:mt-3 inline-block text-xs sm:text-sm font-normal text-[var(--medijoy-green)] hover:underline"
               >
                 See Details
               </Link>
+              </div>
             </div>
           </div>
         ))}

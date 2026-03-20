@@ -411,7 +411,12 @@ const DETAILS: Record<string, DetailOverrides> = {
     downtime: 'Mild redness',
     sessionsOrResults: '2 - 3 Sessions',
     resultWeeks: 2,
-    addOns: COMMON_ADDONS,
+    addOns: [
+      { title: 'LED Light Therapy', description: 'Reduces inflammation and promotes healing', price: 20 },
+      { title: 'Hydrating Serum Boost', description: 'Enhances skin repair and collagen stimulation', price: 20 },
+      { title: 'Neck & Décolletage Upgrade', description: 'Extend treatment to neck and chest area', price: 120 },
+      { title: 'Aftercare Kit', description: 'Essential post treatment for skin recovery', price: 20 },
+    ],
   },
   dermabrasion: {
     overview:
